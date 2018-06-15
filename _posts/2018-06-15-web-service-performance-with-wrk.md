@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Web Service performance with "wrk"
 ---
 ## Intalling on Mac
