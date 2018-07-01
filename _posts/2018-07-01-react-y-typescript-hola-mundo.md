@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: React y typescript - Hola mundo
 ---
 ## Introducción
