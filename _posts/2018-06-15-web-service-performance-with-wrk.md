@@ -3,6 +3,9 @@ layout: post
 published: true
 title: Web Service performance with "wrk"
 ---
+
+> [wrk](https://github.com/wg/wrk) is a modern HTTP benchmarking tool capable of generating significant load when run on a single multi-core CPU. It combines a multithreaded design with scalable event notification systems such as epoll and kqueue.
+
 ## Intalling on Mac
 
 ```bash
@@ -19,8 +22,8 @@ Where:
   - `-t6` means: lets use 6 threads
   - `-c24` means: lets keep 24 connections
   - `-d30s` means: lets do the http call during 30 seconds
-  
-Getting results like this: 
+
+Getting results like this:
 ```
 Thread Stats   Avg      Stdev     Max   +/- Stdev
     Latency    11.14ms   21.01ms 237.22ms   90.22%

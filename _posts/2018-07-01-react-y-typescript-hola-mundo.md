@@ -3,7 +3,6 @@ layout: post
 published: false
 title: React y typescript - Hola mundo
 ---
-## Introducción
 
 Este post explica como crear un *"Hola mundo"* utilizando [React](https://reactjs.org/) con [Typescript](https://www.typescriptlang.org/), no se enfocara en detallar paso a paso o que significa cada comando o configuración realizada, unicamente que hacer para que funcione.
 
