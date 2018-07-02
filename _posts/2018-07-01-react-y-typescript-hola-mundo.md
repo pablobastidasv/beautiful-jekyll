@@ -47,9 +47,19 @@ create-react-app my-app --scripts-version=react-scripts-ts
 
 **Ejecutar el proyecto**:
 
+Ingresa a la carpeta de la aplicación, en este ejemplo se llama `my-app`.
+
+```
+cd my-app
+```
+
+Ahora usamos `npm` para ejecutar el proyecto.
+
 ```
 npm run start
 ```
+
+Esto abrira una ventana del navegador con la aplicación recien creada.
 
 ## Referencia
 
