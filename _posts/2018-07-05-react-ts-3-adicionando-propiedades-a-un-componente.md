@@ -76,3 +76,23 @@ Abramos el archivo `App.tsx`, anteriormente estabamos llamando nuestro `PrimerCo
 Perooo... **Cuando definimos el nombre de los atributos???**
 
 Al momento de crear el constructor, nosotros indicamos los nombres de los atributos que ibamos a revisar del objeto `props` que recibimos en el constructor, estos son los nombres que los atributos del componente van a tener (`props.label`,`props.value`).
+
+**Enviando valores de variables al Componente**
+
+Ya vimos que podemos enviar valores fijos a nuestro componente como lo hicimos con `label="Primer nombre"`, pero y si no queremos un valor fijo, y en lugar de esto queremos una variable, como se haría...?
+
+Para esto creamos la variable que vamos a enviar en nuestro componente "padre" y le asignamos un valor
+
+``` typescript
+private primerNombre: string = "James";
+```
+
+Y ahora en el llamado del componente ponermos esta variable en el valor que lo queremos, en este caso, como valor del atributo `value`.
+
+```typescript
+value={this.primerNombre}
+```
+
+**Reutilizando el componente**
+
+Ahora tenemos un componente reutilizable, vamos ahora a agregar los campos de "Segundo nombre", "Primer apellido", "Segundo apellido" y "Número de documento", esto lo lograremos agregando el componente por cada uno de estos nuevos campos con el los valores que queramos... hmmmm... dejemos esto de tarea, la solución en el proximo Post.
