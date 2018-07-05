@@ -93,6 +93,30 @@ Y ahora en el llamado del componente ponermos esta variable en el valor que lo q
 value={this.primerNombre}
 ```
 
-**Reutilizando el componente**
+El resultado ahora de nuestro archivo `App.tsx` deberia verse de la siguiente forma:
+
+```TypeScript
+import * as React from 'react';
+import PrimerComponente from './component/primer_componente';
+
+class App extends React.Component {
+
+  private primerNombre: string = "James";
+
+  public render() {
+    return (
+      <div>
+        <PrimerComponente
+          label="Primer nombre"
+          value={this.primerNombre} />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+**TAREA: Reutilizando el componente**
 
 Ahora tenemos un componente reutilizable, vamos ahora a agregar los campos de "Segundo nombre", "Primer apellido", "Segundo apellido" y "Número de documento", esto lo lograremos agregando el componente por cada uno de estos nuevos campos con el los valores que queramos... hmmmm... dejemos esto de tarea, la solución en el proximo Post.
