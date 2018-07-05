@@ -4,7 +4,7 @@ published: true
 title: 'React-TS (3): Adicionando Propiedades a un componente '
 ---
 
-Continuando con esta introducción a React usando Typescript, ahora vamos a hacer que el componente del [post anterior](http://{{site.baseurl}}/2018-07-02-primer-componente-en-react.md) reciba informacion desde el componente que lo llama. Esto nos permitirá reutilizar el componente varias veces.
+Continuando con esta introducción a React usando Typescript, ahora vamos a hacer que el componente del [post anterior]({{site.baseurl}}/2018-07-02-primer-componente-en-react.md) reciba informacion desde el componente que lo llama. Esto nos permitirá reutilizar el componente varias veces.
 
 **Entorno**:
 
