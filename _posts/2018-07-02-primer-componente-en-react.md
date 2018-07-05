@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Primer componente en React
+title: 'React-TS (2): Primer componente en React'
 ---
 
 Una vez creado nuestro proyecto, ahora vamos a crear un primer componente en react.
