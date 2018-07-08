@@ -27,7 +27,7 @@ Antes de empezar debemos iniciar nuestro servidor de desarrollo (en caso que no 
 
 Abrimos la carpeta donde tenemos ubicado nuestro proyecto con el editor de texto de su elección (nosotros usaremos Visual studio code).
 
-Una vez abierto el proyecto crearemos una carpeta llamada `components` dentro de la carpeta `src` y a su vez dentro de esta crearemos un archivo que llamaremos `primer_componente.tsx`.
+Una vez abierto el proyecto crearemos una carpeta llamada `components` dentro de la carpeta `src` y a su vez dentro de esta crearemos un archivo que llamaremos `mi_input.tsx`.
 
 Teoria: Un componente en react es una `clase` que extiende de `React.Component`, esta clase tiene un metodo llamaro `public render()` dentro del cual ubicaremos el codigo a devolver en un formato que es muy similar al ya conocido `html` aunque este tiene algunas adiciones que ya proximamente iremos viendo.
 
@@ -36,7 +36,7 @@ Ahora en este archivo que acabamos de crear pondremos el siguiente contenido:
 ```
 import * as React from 'react';
 
-class PrimerComponente extends React.Component {
+class MiInput extends React.Component {
   public render() {
     return (
       <div>Hola Mundo!!!</div>
@@ -44,18 +44,18 @@ class PrimerComponente extends React.Component {
   }
 }
 
-export default PrimerComponente;
+export default MiInput;
 ```
 
 Tada!!!! ya hemos creado nuestro primer componente.
 
-## Como usar el componente (PrimerComponente)
+## Como usar el componente (MiInput)
 
 Ya con el componente creado la pregunta ahora es como utilizarlo, para esto debemos entender que el componente se utiliza como si este fuera una etiqueta mas de `html` la cual podemos usar en cualquiera de nuestros archivos `tsx`.
 
-El nombre de la etiqueta corresponde al nombre de la clase que la represente, en este caso el nombre de la etiqueta será `PrimerComponente`, ya que la clase se llama asi.
+El nombre de la etiqueta corresponde al nombre de la clase que la represente, en este caso el nombre de la etiqueta será `MiInput`, ya que la clase se llama asi.
 
-Y lo usamos de la siguiente forma `<PrimerComponente />`.
+Y lo usamos de la siguiente forma `<MiInput />`.
 
 Para ver esto en funcionamiento vamos al archivo llamado `App.tsx` que esta dentro de la carpeta `src`, y usamos el componente dentro de él.
 
@@ -63,13 +63,13 @@ El archivo debe verse de la siguiente forma:
 
 ```
 import * as React from 'react';
-import PrimerComponente from './component/primer_componente';
+import MiInput from './component/mi_input';
 
 class App extends React.Component {
   public render() {
     return (
       <div>
-        <PrimerComponente />
+        <MiInput />
       </div>
     );
   }
@@ -91,7 +91,7 @@ Ya creamos el componente, pero aun no es lo que queremos, vamos ahora a crear el
 </div>
 ```
 
-Ya tenemos los elementos del componente solo nos falta "embellecerlos" con `css`. Para esto creamos un archivo `css` con el nombre `primer_componente.css` dentro de la carpeta `src/component` con el siguiente contenido.
+Ya tenemos los elementos del componente solo nos falta "embellecerlos" con `css`. Para esto creamos un archivo `css` con el nombre `mi_input.css` dentro de la carpeta `src/component` con el siguiente contenido.
 
 ```
 .input_group{
@@ -122,7 +122,7 @@ Ya tenemos los elementos del componente solo nos falta "embellecerlos" con `css`
 **Importando el `css`**: En React el import de un archivo `css` se realiza dentro del archivo `tsx` como un objeto normal con la sentencia `import` de la siguiente forma:
 
 ```
-import "./primer_componente.css";
+import "./mi_input.css";
 ```
 
 **Aplicando el estilo**: Como mensioné anteriormente, en el metodo `render()` de React se escribe un código muy similar al html pero es igual, una de las diferencias es que en `html` el atributo para aplicar una clase css a un elemento es el `class`, en React este atributo pasa a llamarse `className`.

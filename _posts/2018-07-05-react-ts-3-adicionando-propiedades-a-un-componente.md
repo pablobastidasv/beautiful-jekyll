@@ -27,10 +27,10 @@ Para esto seguiremos los siguientes pasos:
 
 **Manos a la obra**
 
-Abrimos el componente creado anteriormente (`primer_componente.tsx`) y modificamos la linea de la declaracion de la clase agregando `<any, any>` a `React.Component<any, any>`.
+Abrimos el componente creado anteriormente (`mi_input.tsx`) y modificamos la linea de la declaracion de la clase agregando `<any, any>` a `React.Component<any, any>`.
 
 ```Typescript
-class PrimerComponente extends React.Component<any, any> {
+class MiInput extends React.Component<any, any> {
 ```
 
 Agregamos atributos `label` y `value` al componente.
@@ -65,10 +65,10 @@ Aqui vemos que en el label pusimos `{this.label}` lo cual referencia el atributo
 
 ## Usando los atributos del componente desde otro
 
-Abramos el archivo `App.tsx`, anteriormente estabamos llamando nuestro `PrimerComponente` desde aqui, pero ahora debemos enviarle unos valores, estos valores los enviaremos indicando el nombre del atributo y el valor a enviar. En este caso los atributos son `label` y `value`. Quedaria de la siguiente forma.
+Abramos el archivo `App.tsx`, anteriormente estabamos llamando nuestro `MiInput` desde aqui, pero ahora debemos enviarle unos valores, estos valores los enviaremos indicando el nombre del atributo y el valor a enviar. En este caso los atributos son `label` y `value`. Quedaria de la siguiente forma.
 
 ``` Typescript
-<PrimerComponente
+<MiInput
   label="Primer nombre"
   value="James" />
 ```
@@ -97,7 +97,7 @@ El resultado ahora de nuestro archivo `App.tsx` deberia verse de la siguiente fo
 
 ```TypeScript
 import * as React from 'react';
-import PrimerComponente from './component/primer_componente';
+import MiInput from './component/mi_input';
 
 class App extends React.Component {
 
@@ -106,7 +106,7 @@ class App extends React.Component {
   public render() {
     return (
       <div>
-        <PrimerComponente
+        <MiInput
           label="Primer nombre"
           value={this.primerNombre} />
       </div>
@@ -117,6 +117,6 @@ class App extends React.Component {
 export default App;
 ```
 
-**TAREA: Reutilizando el componente**
+**Reutilizando el componente**
 
-Ahora tenemos un componente reutilizable, vamos ahora a agregar los campos de "Segundo nombre", "Primer apellido", "Segundo apellido" y "Número de documento", esto lo lograremos agregando el componente por cada uno de estos nuevos campos con el los valores que queramos... hmmmm... dejemos esto de tarea, la solución en el proximo Post.
+Ahora tenemos un componente reutilizable, vamos ahora a agregar los campos (`MiInput`) de "Segundo nombre", "Primer apellido", "Segundo apellido" y "Número de documento" en el componente principal (`App.tsx`), esto lo lograremos agregando el componente por cada uno de estos nuevos campos con el los valores que queramos... hmmmm... dejemos esto de tarea, la solución en el proximo Post.
