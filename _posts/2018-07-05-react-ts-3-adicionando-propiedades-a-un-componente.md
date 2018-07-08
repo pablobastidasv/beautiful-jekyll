@@ -54,7 +54,7 @@ Ahora vamos a utilizar los atributos que acabos de crear e inicializar, dentro d
 
 ```Typescript
 <div className="input_group">
-    <label >{this.label}</label>
+    <label>{this.label}</label>
     <input type="text" value={this.value} />
 </div>
 ```
@@ -119,4 +119,56 @@ export default App;
 
 **Reutilizando el componente**
 
-Ahora tenemos un componente reutilizable, vamos ahora a agregar los campos (`MiInput`) de "Segundo nombre", "Primer apellido", "Segundo apellido" y "Número de documento" en el componente principal (`App.tsx`), esto lo lograremos agregando el componente por cada uno de estos nuevos campos con el los valores que queramos... hmmmm... dejemos esto de tarea, la solución en el proximo Post.
+Ahora el componente `MiInput` es un componente reutilizable, vamos ahora a agregar los campos "Segundo nombre", "Primer apellido", "Segundo apellido" y "Número de documento" en el componente principal (`App.tsx`) utilizando el componente `MiInput` para cada uno de estos valores.
+
+De la siguiente forma estaremos reutilizando el componentes `MiInput` varias veces dentro de un mismo componente (`App.tsx`).
+
+``` TypeScript
+  ...
+
+  <div>
+
+    ...
+
+    <MiInput
+      label="Primer nombre"
+      value={this.primerNombre} />
+
+    <MiInput
+      label="Segundo nombre"
+      value={this.segundoNombre} />
+
+    ...
+
+  </div>
+
+  ...
+```
+
+**Cadenas de componentes**
+
+Ya hemos utilizado el componente `MiInput` varias veces dentro del componente `App.tsx`, ahora vamos a crear un componente que nos va a mostrar toda la informacion de una persona y otro para ver toda la informacion de un contrato, estos componentes lo llamaremos `InfoPersona` e `InfoContrato` respectivamente.
+
+La idea de esto es que el componente `App.tsx` nos quede de la siguiente forma.
+
+```TypeScript
+import * as React from 'react';
+import InfoPersona from './component/info_persona';
+import InfoContrato from './component/info_contrato';
+
+class App extends React.Component {
+
+  public render() {
+    return (
+      <div>
+        <InfoPersona />
+        <InfoContrato />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+... Esta solucion la veremos en el siguiente Post.
