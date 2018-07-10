@@ -21,8 +21,8 @@ El ejercicio resuelto correspondria en 2 nuevos componentes `InfoPersona` e `Inf
 
 ```typescript
 import * as React from 'react';
-import MiInput from './mi_input';
-import './person.css';
+import PrimerComponente from './primer_componente';
+import './primer_componente.css';
 
 class InfoPersona extends React.Component {
   private nombre: string = "";
@@ -32,13 +32,13 @@ class InfoPersona extends React.Component {
   public render() {
     return (
         <div>
-            < 
+            <PrimerComponente 
                 label="Nombre(s)" 
                 value={this.nombre} />
-            <MiInput 
+            <PrimerComponente 
                 label="Apellido(s)" 
                 value={this.apellido} />
-            <MiInput 
+            <PrimerComponente 
                 label="Edad" 
                 value={this.edad} />
         </div>
@@ -53,10 +53,10 @@ export default InfoPersona;
 
 ```typescript
 import * as React from 'react';
-import MiInput from './mi_input';
-import './person.css';
+import PrimerComponente from './primer_componente';
+import './primer_componente.css';
 
-class InfoPersona extends React.Component {
+class InfoContrato extends React.Component {
   private tipo: string = "";
   private fechaInicio: string = "";
   private salario: string = "";
@@ -64,13 +64,13 @@ class InfoPersona extends React.Component {
   public render() {
     return (
         <div>
-            <MiInput 
+            <PrimerComponente 
                 label="Tipo" 
                 value={this.tipo} />
-            <MiInput 
+            <PrimerComponente 
                 label="Fecha de inicio" 
                 value={this.fechaInicio} />
-            <MiInput 
+            <PrimerComponente 
                 label="Salario" 
                 value={this.salario} />
         </div>
@@ -78,15 +78,15 @@ class InfoPersona extends React.Component {
   }
 }
 
-export default InfoPersona;
+export default InfoContrato;
 ```
 
 Con estos componentes ya creados estamos viendo como se reutiliza el componente creado en el primer capitulo (MiInput) en otros dos componentes y estos 2 nuevos componentes los podemos utilizar en otro componente, como nuestro `App.tsx`, quedando este de la siguiente forma.
 
 ```Typescript
 import * as React from 'react';
-import InfoPersona from './component/info_contrato';
 import InfoContrato from './component/info_contrato';
+import InfoPersona from './component/info_persona';
 
 class App extends React.Component {
 
