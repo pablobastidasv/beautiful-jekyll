@@ -17,7 +17,7 @@ Ahora vamos a resolver el "ejercicio" que dejamos en el [post anterior](https://
 
 El ejercicio resuelto correspondria en 2 nuevos componentes `InfoPersona` e `InfoContrato` los cuales se verian de la siguiente manera:
 
-** info_persona.tsx **
+**info_persona.tsx**
 
 ```typescript
 import * as React from 'react';
@@ -49,7 +49,7 @@ class InfoPersona extends React.Component {
 export default InfoPersona;
 ```
 
-** info_contrato.tsx **
+**info_contrato.tsx**
 
 ```typescript
 import * as React from 'react';
