@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: truxe
 title: 'React-TS (4): Componentes sin estado (Stateless)'
 ---
 Que es estado? se habla de estado cuando se mantiene informacion. Hasta el momento hemos 
