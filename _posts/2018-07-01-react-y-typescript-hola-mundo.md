@@ -4,7 +4,7 @@ published: true
 title: 'React-TS (1): React y typescript - Hola mundo'
 ---
 
-Este post explica como crear un *"Hola mundo"* utilizando [React](https://reactjs.org/) con [Typescript](https://www.typescriptlang.org/), no se enfocara en detallar paso a paso o que significa cada comando o configuración realizada, unicamente que hacer para que funcione.
+Este post explica como crear un *"Hola mundo"* utilizando [React](https://reactjs.org/) con [TypeScript](https://www.typescriptlang.org/), no se enfocara en detallar paso a paso o que significa cada comando o configuración realizada, únicamente que hacer para que funcione.
 
 **Entorno**:
   - MacOS High Sierra `Version 10.13.4`
@@ -15,9 +15,9 @@ Este post explica como crear un *"Hola mundo"* utilizando [React](https://reactj
 
 ## Antes de empezar
 
-  1. Instalar typescript
+  1. Instalar TypeScript
 
-Con el siguiente comando se instala Typescript:
+Con el siguiente comando se instala TypeScript:
 
 ```bash
 npm install -g typescript
@@ -29,7 +29,7 @@ Para verificar que la instalación se efectuó correctamente
 tsc -v
 ```
 
-Esta instrucción muestra la version instalada, en el momento de realizar este tutorial la ultima version es `Version 2.9.2`
+Esta instrucción muestra la versión instalada, en el momento de realizar este post la ultima versión es `Version 2.9.2`
 
   2. Instalar `create-react-app`
 
@@ -41,7 +41,7 @@ npm install -g create-react-app
 
 **Crear el proyecto**:
 
-```
+```bash
 create-react-app my-app --scripts-version=react-scripts-ts
 ```
 
@@ -59,7 +59,7 @@ Ahora usamos `npm` para ejecutar el proyecto.
 npm run start
 ```
 
-Esto abrira una ventana del navegador con la aplicación recien creada.
+Esto abrirá una ventana del navegador con la aplicación recién creada.
 
 ## Referencia
 

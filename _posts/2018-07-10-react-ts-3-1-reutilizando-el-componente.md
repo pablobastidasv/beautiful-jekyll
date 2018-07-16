@@ -3,7 +3,7 @@ layout: post
 published: true
 title: 'React-TS (3-1): Reutilizando el componente '
 ---
-Ahora vamos a resolver el "ejercicio" que dejamos en el [post anterior](https://pablobastidasv.github.io/2018-07-05-react-ts-3-adicionando-propiedades-a-un-componente/) en el cual requeririamos reutilizacion de componentes de una manera mas retadora.
+Ahora vamos a resolver el "ejercicio" que dejamos en el [post anterior](https://pablobastidasv.github.io/2018-07-05-react-ts-3-adicionando-propiedades-a-un-componente/) en el cual requeriríamos reutilización de componentes de una manera mas retadora.
 
 **Entorno**:
 
@@ -13,9 +13,9 @@ Ahora vamos a resolver el "ejercicio" que dejamos en el [post anterior](https://
   - npm `Version 6.1.0`
   - iTerm2 `Build 3.1.6`
 
-## Solucion
+## Solución
 
-El ejercicio resuelto correspondria en 2 nuevos componentes `InfoPersona` e `InfoContrato` los cuales se verian de la siguiente manera:
+El ejercicio resuelto correspondería en 2 nuevos componentes `InfoPersona` e `InfoContrato` los cuales se verían de la siguiente manera:
 
 **info_persona.tsx**
 

@@ -4,7 +4,7 @@ published: true
 title: 'React-TS (2): Primer componente en React'
 ---
 
-Una vez creado nuestro proyecto, ahora vamos a crear un primer componente en react.
+Una vez creado nuestro proyecto, ahora vamos a crear un primer componente en React.
 
 **Entorno**:
   - MacOS High Sierra `Version 10.13.4`
@@ -15,11 +15,11 @@ Una vez creado nuestro proyecto, ahora vamos a crear un primer componente en rea
 
 ## Primer componente
 
-Empezaremos con un componente sencillo, como el que vemos a continuacion:
+Empezaremos con un componente sencillo, como el que vemos a continuación:
 
 ![avatar-icon.png]({{site.baseurl}}/img/first_component/small_component.png)
 
-Revisandolo veremos que es un `input` con su respectivo `label`, es decir, este componente esta conformado por un label y un input.
+Revisándolo veremos que es un `input` con su respectivo `label`, es decir, este componente esta conformado por un label y un input.
 
 ## Manos a la obra
 
@@ -29,7 +29,7 @@ Abrimos la carpeta donde tenemos ubicado nuestro proyecto con el editor de texto
 
 Una vez abierto el proyecto crearemos una carpeta llamada `components` dentro de la carpeta `src` y a su vez dentro de esta crearemos un archivo que llamaremos `mi_input.tsx`.
 
-Teoria: Un componente en react es una `clase` que extiende de `React.Component`, esta clase tiene un metodo llamaro `public render()` dentro del cual ubicaremos el codigo a devolver en un formato que es muy similar al ya conocido `html` aunque este tiene algunas adiciones que ya proximamente iremos viendo.
+Teoría: Un componente en React es una `clase` que extiende de `React.Component`, esta clase tiene un método llamado `public render()` dentro del cual ubicaremos el código a devolver en un formato que es muy similar al ya conocido `html` aunque este tiene algunas adiciones que ya próximamente iremos viendo.
 
 Ahora en este archivo que acabamos de crear pondremos el siguiente contenido:
 
@@ -47,13 +47,13 @@ class MiInput extends React.Component {
 export default MiInput;
 ```
 
-Tada!!!! ya hemos creado nuestro primer componente.
+Tada!!!! Ya hemos creado nuestro primer componente.
 
 ## Como usar el componente (MiInput)
 
 Ya con el componente creado la pregunta ahora es como utilizarlo, para esto debemos entender que el componente se utiliza como si este fuera una etiqueta mas de `html` la cual podemos usar en cualquiera de nuestros archivos `tsx`.
 
-El nombre de la etiqueta corresponde al nombre de la clase que la represente, en este caso el nombre de la etiqueta será `MiInput`, ya que la clase se llama asi.
+El nombre de la etiqueta corresponde al nombre de la clase que la represente, en este caso el nombre de la etiqueta será `MiInput`, ya que la clase se llama así.
 
 Y lo usamos de la siguiente forma `<MiInput />`.
 
@@ -78,7 +78,7 @@ class App extends React.Component {
 export default App;
 ```
 
-Guardamos y vamos al navegador a ver el resultado, podremos ver en pantalla el mensaje "Hola mundo!!!" que habiamos puesto en nuestro componente.
+Guardamos y vamos al navegador a ver el resultado, podremos ver en pantalla el mensaje "Hola mundo!!!" que habíamos puesto en nuestro componente.
 
 ## Completando el componente
 
@@ -125,7 +125,7 @@ Ya tenemos los elementos del componente solo nos falta "embellecerlos" con `css`
 import "./mi_input.css";
 ```
 
-**Aplicando el estilo**: Como mensioné anteriormente, en el metodo `render()` de React se escribe un código muy similar al html pero es igual, una de las diferencias es que en `html` el atributo para aplicar una clase css a un elemento es el `class`, en React este atributo pasa a llamarse `className`.
+**Aplicando el estilo**: Como mencioné anteriormente, en el método `render()` de React se escribe un código muy similar al HTML pero es igual, una de las diferencias es que en `html` el atributo para aplicar una clase CSS a un elemento es el `class`, en React este atributo pasa a llamarse `className`.
 
 Aplicamos el estilo `input_group` al elemento `div`, quedando de la siguiente forma:
 
@@ -136,4 +136,4 @@ Aplicamos el estilo `input_group` al elemento `div`, quedando de la siguiente fo
 </div>
 ```
 
-Y listo, ya tenemos nuestro componente como esperamos verlo, guardamos todos los cambios, vamos a nuestro navegador y deberiamos poder ver nuestro componente siendo visualizado en la pantalla.
+ Listo, ya tenemos nuestro componente como esperamos verlo, guardamos todos los cambios, vamos a nuestro navegador y deberíamos poder ver nuestro componente siendo visualizado en la pantalla.
